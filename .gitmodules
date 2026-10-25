@@ -1,0 +1,9 @@
+[submodule "external/RAF"]
+	path = external/RAF
+	url = https://github.com/parkie0517/RAF
+[submodule "external/L4DR"]
+	path = external/L4DR
+	url = https://github.com/ylwhxht/L4DR
+[submodule "external/K-Radar"]
+	path = external/K-Radar
+	url = https://github.com/kaist-avelab/K-Radar
