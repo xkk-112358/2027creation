@@ -1,4 +1,5 @@
 *.tar.gz
+!dataset_meta/*.tar.gz
 ai.env
 __pycache__/
 *.pyc

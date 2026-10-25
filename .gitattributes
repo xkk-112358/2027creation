@@ -1,1 +1,2 @@
 weights/*.pt filter=lfs diff=lfs merge=lfs -text
+dataset_meta/*.tar.gz filter=lfs diff=lfs merge=lfs -text
