@@ -1,0 +1,7 @@
+*.tar.gz
+ai.env
+__pycache__/
+*.pyc
+.DS_Store
+data/
+weights/

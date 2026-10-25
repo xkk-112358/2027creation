@@ -1,0 +1,27 @@
+Import VoxelPooling fail.
+seq1 frames: 193
+[25/193] 21s  gt=25  pred@0.2=10
+[50/193] 38s  gt=54  pred@0.2=12
+[75/193] 55s  gt=98  pred@0.2=54
+[100/193] 72s  gt=123  pred@0.2=99
+[125/193] 88s  gt=164  pred@0.2=119
+[150/193] 104s  gt=211  pred@0.2=138
+[175/193] 120s  gt=236  pred@0.2=141
+[193/193] 132s  gt=254  pred@0.2=142
+/usr/local/lib/python3.8/dist-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/functional.py:478: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2894.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+
+=== seq1 evaluation ===
+frames=193  GT=254  pred/frame={'0.1': 1.1036269430051813, '0.2': 0.7357512953367875, '0.3': 0.5181347150259067}
+inference: 103 ms/frame (9.7 FPS)
+score>=0.1,iou=0.3     recall=0.543  precision=0.648  (TP=138 FP=75 FN=116)
+score>=0.1,iou=0.5     recall=0.150  precision=0.178  (TP=38 FP=175 FN=216)
+score>=0.2,iou=0.3     recall=0.394  precision=0.704  (TP=100 FP=42 FN=154)
+score>=0.2,iou=0.5     recall=0.079  precision=0.141  (TP=20 FP=122 FN=234)
+score>=0.3,iou=0.3     recall=0.280  precision=0.710  (TP=71 FP=29 FN=183)
+score>=0.3,iou=0.5     recall=0.035  precision=0.090  (TP=9 FP=91 FN=245)
+
+saved -> /hy-tmp/eval_seq1.json
+free(): invalid pointer
